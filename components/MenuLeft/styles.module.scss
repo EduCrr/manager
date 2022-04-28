@@ -1,0 +1,19 @@
+.container {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul li {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+  .link {
+    &:hover {
+      color: #e52864;
+    }
+  }
+  .linkActive a {
+    color: #e52864;
+  }
+}

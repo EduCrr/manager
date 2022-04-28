@@ -1,0 +1,98 @@
+.linkName {
+  width: 100%;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #202125;
+  color: white;
+  margin: 2rem 0px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  background: rgb(33, 34, 38);
+  background: linear-gradient(
+    183deg,
+    rgba(33, 34, 38, 1) 0%,
+    rgba(24, 25, 29, 1) 35%,
+    rgba(24, 25, 29, 1) 100%
+  );
+
+  .title {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      padding: 10px;
+      border-radius: 10px;
+      outline: 0;
+      border: 0;
+    }
+  }
+
+  .contents {
+    padding: 0px 5px;
+    margin: 2rem 0px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      object-fit: cover;
+      height: 270px;
+      border-radius: 15px;
+    }
+    h4 {
+      margin: 1.5rem 0px;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      button {
+        cursor: pointer;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .contentType {
+    margin: 1rem 0px;
+    width: 100%;
+    form {
+      margin: 1rem 0px;
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        border-radius: 15px;
+        margin: 1rem 0px;
+        max-width: 600px;
+        background-color: #202125;
+        outline: 0;
+        border: 0px;
+        padding: 20px;
+        color: white;
+      }
+      [type="file"] + label {
+        cursor: pointer;
+        width: 450px;
+      }
+      img {
+        margin: 1rem 0px;
+        border-radius: 15px;
+        height: 350px;
+        width: 450px;
+        object-fit: cover;
+      }
+    }
+  }
+}
