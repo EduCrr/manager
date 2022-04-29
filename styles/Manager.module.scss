@@ -1,0 +1,90 @@
+.managerButton {
+  padding: 10px;
+  border-radius: 15px;
+  outline: 0;
+  border: 0;
+  background-color: #e52864;
+  cursor: pointer;
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 43%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover img {
+  opacity: 0.4;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  padding: 10px;
+  border-radius: 15px;
+  outline: 0;
+  border: 0;
+  background-color: #e52864;
+  cursor: pointer;
+  color: white;
+}
+
+.productHover {
+  img {
+    width: 100%;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    width: inherit;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container:hover img {
+    opacity: 0.4;
+  }
+
+  .container:hover .middle {
+    opacity: 1;
+  }
+}
