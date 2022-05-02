@@ -51,7 +51,7 @@ const Home = () => {
   ];
   return (
     <Default>
-      <div className={styles.linkName}>Home</div>
+      <div className={Manager.linkName}>Home</div>
       <div className={Manager}>
         <div className={styles.items}>
           <div className={styles.title}>

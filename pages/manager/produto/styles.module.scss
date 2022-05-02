@@ -1,0 +1,26 @@
+.singleProduct {
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    img {
+      height: 600px;
+      object-fit: cover;
+      width: 450px;
+    }
+  }
+
+  .right {
+    flex: 1;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 20px;
+    background: rgb(33, 34, 38);
+    background: linear-gradient(
+      183deg,
+      rgba(33, 34, 38, 1) 0%,
+      rgba(24, 25, 29, 1) 35%,
+      rgba(24, 25, 29, 1) 100%
+    );
+  }
+}
