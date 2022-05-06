@@ -23,5 +23,8 @@ main.content {
 
 .footer {
   max-width: 1100px;
-  margin: auto;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

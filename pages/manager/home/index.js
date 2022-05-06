@@ -53,84 +53,106 @@ const Home = () => {
     <Default>
       <div className={Manager.linkName}>Home</div>
       <div className={Manager}>
-        <div className={styles.items}>
-          <div className={styles.title}>
-            <h1>Products</h1>
-            <button className={Manager.managerButton}>
-              <FaPlus />
-            </button>
-          </div>
-          <div className={styles.contents}>
-            <div className={Manager.productHover}>
-              <div className={Manager.container}>
-                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
-                <div className={Manager.middle}>
-                  <div for="file" className={Manager.text}>
-                    <FaEdit />
+        <div className="items">
+          <div className={styles.items}>
+            <div className={styles.title}>
+              <h1>Products</h1>
+              <button className={Manager.managerButton}>
+                <FaPlus />
+              </button>
+            </div>
+            <div className={styles.contents}>
+              <div className={Manager.productHover}>
+                <div className={Manager.container}>
+                  <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
+                  <div className={Manager.middle}>
+                    <div for="file" className={Manager.text}>
+                      <FaEdit />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <h4>Title of product</h4>
-            <div className={styles.buttons}>
-              <button className={Manager.managerButton}>
-                <FaEdit />
-              </button>
-              <button className={Manager.managerButton}>
-                <FaTrash />
-              </button>
+              <h4>Title of product</h4>
+              <div className={styles.buttons}>
+                <button className={Manager.managerButton}>
+                  <FaEdit />
+                </button>
+                <button className={Manager.managerButton}>
+                  <FaTrash />
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div className={styles.items}>
-          <div className={styles.title}>
-            <h1>Content</h1>
-          </div>
-          <div className={styles.contentType}>
-            <h5>Content Type</h5>
-            <form>
-              <input placeholder="Title" />
-              <QuillNoSSRWrapper
-                modules={modules}
-                formats={formats}
-                theme="snow"
-              />
-              <input type="file" id="file" style={{ display: "none" }} />
-              <div className={Manager.container}>
-                <label for="file">
-                  <img src="https://images.unsplash.com/photo-1593998066526-65fcab3021a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" />
-                  <div className={Manager.middle}>
-                    <div for="file" className={Manager.text}>
-                      <FaFileAlt />
-                    </div>
+        <div className="items">
+          <div className={styles.items}>
+            <div className={styles.title}>
+              <h1>Content</h1>
+            </div>
+            <div className={styles.contentType}>
+              <h5>Content Type</h5>
+              <div className={Manager.formContact}>
+                <form>
+                  <input placeholder="Title" />
+                  <QuillNoSSRWrapper
+                    modules={modules}
+                    formats={formats}
+                    theme="snow"
+                  />
+                  <input type="file" id="file" style={{ display: "none" }} />
+                  <div className={Manager.container}>
+                    <label for="file">
+                      <img
+                        className={Manager.selected}
+                        src="https://images.unsplash.com/photo-1593998066526-65fcab3021a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                      />
+                      <div className={Manager.middle}>
+                        <div for="file" className={Manager.text}>
+                          <FaFileAlt />
+                        </div>
+                      </div>
+                    </label>
                   </div>
-                </label>
+                  <input
+                    className={Manager.submit}
+                    type="submit"
+                    value="Update"
+                  />
+                </form>
               </div>
-              <input type="submit" value="Update" />
-            </form>
-          </div>
-          <div className={styles.contentType}>
-            <h5>Content Type</h5>
-            <form>
-              <input placeholder="Title" />
-              <QuillNoSSRWrapper
-                modules={modules}
-                formats={formats}
-                theme="snow"
-              />
-              <input type="file" id="file" style={{ display: "none" }} />
-              <div className={Manager.container}>
-                <label for="file">
-                  <img src="https://images.unsplash.com/photo-1593998066526-65fcab3021a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" />
-                  <div className={Manager.middle}>
-                    <div for="file" className={Manager.text}>
-                      <FaFileAlt />
-                    </div>
+            </div>
+            <div className={styles.contentType}>
+              <h5>Content Type</h5>
+              <div className={Manager.formContact}>
+                <form>
+                  <input placeholder="Title" />
+                  <QuillNoSSRWrapper
+                    modules={modules}
+                    formats={formats}
+                    theme="snow"
+                  />
+                  <input type="file" id="file" style={{ display: "none" }} />
+                  <div className={Manager.container}>
+                    <label for="file">
+                      <img
+                        className={Manager.selected}
+                        src="https://images.unsplash.com/photo-1593998066526-65fcab3021a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+                      />
+                      <div className={Manager.middle}>
+                        <div for="file" className={Manager.text}>
+                          <FaFileAlt />
+                        </div>
+                      </div>
+                    </label>
                   </div>
-                </label>
+                  <input
+                    className={Manager.submit}
+                    type="submit"
+                    value="Update"
+                  />
+                </form>
               </div>
-              <input type="submit" value="Update" />
-            </form>
+            </div>
           </div>
         </div>
       </div>

@@ -12,7 +12,10 @@ export const Default = ({ children }) => {
         <MenuLeft />
       </div>
       <main className={styles.content}>{children}</main>
-      <div className={styles.footer}>Footer</div>
+      <div className={styles.footer}>
+        <div className="left">Todos os direitos reservados 2022</div>
+        <div className="right">8poroito</div>
+      </div>
     </>
   );
 };

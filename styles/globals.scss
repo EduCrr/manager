@@ -41,7 +41,7 @@ html ::-webkit-scrollbar-track {
 }
 .quill {
   margin: 1rem 0px;
-  width: 750px;
+  width: 100% !important;
 }
 .ql-toolbar.ql-snow,
 .ql-container.ql-snow {
@@ -49,4 +49,15 @@ html ::-webkit-scrollbar-track {
 }
 .ql-toolbar.ql-snow:first-of-type {
   display: none;
+}
+
+.items {
+  border-radius: 15px;
+  background: rgb(33, 34, 38);
+  background: linear-gradient(
+    183deg,
+    rgba(33, 34, 38, 1) 0%,
+    rgba(24, 25, 29, 1) 35%,
+    rgba(24, 25, 29, 1) 100%
+  );
 }

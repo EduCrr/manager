@@ -1,6 +1,6 @@
 .managerButton {
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 5px;
   outline: 0;
   border: 0;
   background-color: #e52864;
@@ -43,7 +43,7 @@
 
 .text {
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 5px;
   outline: 0;
   border: 0;
   background-color: #e52864;
@@ -95,4 +95,50 @@
   background-color: #202125;
   color: white;
   margin: 2rem 0px;
+}
+
+.formContact {
+  form {
+    margin: 1rem 0px;
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea,
+    select {
+      border-radius: 15px;
+      margin: 1rem 0px;
+      width: 100%;
+      background-color: #202125;
+      outline: 0;
+      border: 0px;
+      padding: 20px;
+      color: white;
+    }
+    .select {
+      position: relative;
+      display: flex;
+      padding: 10px;
+      line-height: 3;
+      background: #202125;
+      overflow: hidden;
+      border-radius: 0.25em;
+    }
+
+    [type="file"] + label {
+      cursor: pointer;
+      width: 450px;
+    }
+    img.selected {
+      margin: 1rem 0px;
+      border-radius: 15px;
+      height: 350px;
+      width: 450px;
+      object-fit: cover;
+    }
+    .submit {
+      cursor: pointer;
+      width: 200px;
+    }
+  }
 }
