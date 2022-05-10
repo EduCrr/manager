@@ -1,0 +1,23 @@
+.formContact {
+  display: flex;
+  align-items: center;
+
+  form {
+    display: flex;
+  }
+
+  input,
+  button {
+    border-radius: 15px;
+    margin-right: 10px;
+    background-color: #17181c;
+    outline: 0;
+    border: 0px;
+    padding: 10px;
+    color: white;
+  }
+  button {
+    margin-right: 0px;
+    cursor: pointer;
+  }
+}

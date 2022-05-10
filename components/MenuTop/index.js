@@ -5,6 +5,10 @@ export const MenuTop = () => {
   return (
     <div className={styles.container}>
       <div className={styles.menu}>
+        <div className={styles.user}>
+          <p>8poroito</p>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_p_TOIEqMsaP4yTN9mJPWCIcZEmOABtDB_gXOCaDuKBw6K-iTbTctOZZSorgNf8J2OoU&usqp=CAU" />
+        </div>
         <button className={Manager.managerButton}>
           <FaPowerOff />
         </button>

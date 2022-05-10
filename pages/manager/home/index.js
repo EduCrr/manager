@@ -4,13 +4,14 @@ import Manager from "../../../styles/Manager.module.scss";
 import { FaPlus } from "react-icons/fa";
 import { ContentManager } from "../../../components/ContentManager";
 import { ImtemManager } from "../../../components/ItemManager";
+import { Initial } from "../../../components/Initial";
 import Link from "next/link";
 
 const Home = () => {
   const handleAddMore = () => {};
   return (
     <Default>
-      <div className={Manager.linkName}>Home</div>
+      <Initial />
       <div className="items">
         <div className={styles.items}>
           <div className={styles.title}>

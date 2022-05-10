@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import Manager from "../../styles/Manager.module.scss";
-import { FaTrash, FaEdit,  } from "react-icons/fa";
+import { FaTrash, FaEdit } from "react-icons/fa";
 
 export const ImtemManager = () => {
   return (
