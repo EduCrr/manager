@@ -80,7 +80,7 @@ const ProductSlug = () => {
             <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
             <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
           </Slider>
-          <div className="arrows">
+          <div className={styles.arrows}>
             <div onClick={gotoPrev}>
               <FaLongArrowAltLeft />
             </div>
@@ -93,24 +93,29 @@ const ProductSlug = () => {
           <div className={styles.right}>
             <div className={Manager.formContact}>
               <form>
-                <input placeholder="Title" />
-                <select>
-                  <option>Categories</option>
-                  <option>Categories</option>
-                  <option>Categories</option>
-                  <option>Categories</option>
-                </select>
-                <QuillNoSSRWrapper
-                  modules={modules}
-                  formats={formats}
-                  theme="snow"
-                />
-
-                <input
-                  className={Manager.submit}
-                  type="submit"
-                  value="Update"
-                />
+                <div className={styles.ajustTop}>
+                  <input placeholder="Title" />
+                  <input placeholder="Data" />
+                  <select>
+                    <option>Categories</option>
+                    <option>Categories</option>
+                    <option>Categories</option>
+                    <option>Categories</option>
+                  </select>
+                  <QuillNoSSRWrapper
+                    modules={modules}
+                    formats={formats}
+                    theme="snow"
+                    className={styles.notes}
+                  />
+                </div>
+                <div className={styles.ajustBottom}>
+                  <input
+                    className={Manager.submit}
+                    type="submit"
+                    value="Update"
+                  />
+                </div>
               </form>
             </div>
           </div>

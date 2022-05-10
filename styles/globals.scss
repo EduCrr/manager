@@ -20,7 +20,7 @@ a {
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #e52864 #17181c;
+  scrollbar-color: #dc9763 #17181c;
   border-radius: 9999px;
 }
 
@@ -31,7 +31,7 @@ html ::-webkit-scrollbar {
 }
 
 html ::-webkit-scrollbar-thumb {
-  background-color: #e52864;
+  background-color: #dc9763;
   background-clip: padding-box;
   border-radius: 9999px;
 }
@@ -50,7 +50,9 @@ html ::-webkit-scrollbar-track {
 .ql-toolbar.ql-snow:first-of-type {
   display: none;
 }
-
+.ql-editor {
+  width: 600px !important;
+}
 .items {
   border-radius: 15px;
   background: rgb(33, 34, 38);

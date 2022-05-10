@@ -52,6 +52,7 @@ const Adicionar = () => {
         <div className={Manager.formContact}>
           <form>
             <input placeholder="Title" />
+            <input placeholder="Data" />
             <select>
               <option>Categories</option>
               <option>Categories</option>

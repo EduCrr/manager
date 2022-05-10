@@ -6,7 +6,7 @@
   .left {
     width: 450px;
     img {
-      height: 600px;
+      height: 620px;
       object-fit: cover;
       width: inherit;
       border-radius: 15px;
@@ -18,19 +18,36 @@
     width: 100%;
     justify-content: flex-end;
     div {
-      margin-left: 20px;
-      color: #dc9763;
+      margin-top: 10px;
+      margin-left: 15px;
+      background-color: #dc9763;
       font-size: 20px;
+      border-radius: 5px;
+      padding: 5px;
       cursor: pointer;
+      display: flex;
+      justify-content: center;
     }
   }
   .right {
-    height: 600px;
+    height: 620px;
     flex: 1;
-    overflow: auto;
     padding: 15px;
     border-radius: 15px;
     margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    form {
+      height: 600px !important;
+    }
+    .notes {
+      height: 175px;
+    }
+    .ajustBottom {
+      margin-top: auto;
+      z-index: 99999;
+      align-self: flex-end;
+    }
   }
 }
 .images {

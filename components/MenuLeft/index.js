@@ -2,6 +2,8 @@ import styles from "./styles.module.scss";
 import Link from "next/link";
 import { navigationLinks } from "../../utils/data";
 import { useRouter } from "next/router";
+import { FaHome, FaEdit } from "react-icons/fa";
+
 export const MenuLeft = () => {
   const router = useRouter();
 
@@ -19,7 +21,11 @@ export const MenuLeft = () => {
             key={k}
           >
             <Link href={item.path[0]}>
-              <a>{item.label}</a>
+              <a>
+                <span>
+                  <item.label />
+                </span>
+              </a>
             </Link>
           </li>
         ))}
@@ -27,3 +33,4 @@ export const MenuLeft = () => {
     </div>
   );
 };
+//https://serveanswer.com/questions/how-to-set-react-icons-in-loop-in-reactjs
